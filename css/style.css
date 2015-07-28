@@ -309,7 +309,7 @@ hr {
 }
 
 #intro.intro {
-	padding:0 0 0 0;
+	padding:0% 0 0 0;
 }
 
 .intro .slogan {
@@ -338,6 +338,7 @@ hr {
 	font-family: Montserrat, sans-serif;
 	background-color: rgba(0, 0, 0, 0);
 	text-decoration: none;
+	text-transform: uppercase;
 	border-width: 0px;
 	border-color: #000;
 	border-style: none;
@@ -348,6 +349,7 @@ hr {
 	color: #fff;
 	text-shadow: -1px 1px 1px #000;
 }
+
 
 
 /* ===========================
@@ -1482,5 +1484,12 @@ header h1 {
 }
 
 .logo-footer  img{
-width:7em;
+	width:7em;
+}
+
+.whyus  h3 {
+	padding-top:2em;
+}
+.slogan img {
+
 }
