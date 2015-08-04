@@ -309,7 +309,7 @@ hr {
 }
 
 #intro.intro {
-	padding:20% 0 0 0;
+	padding:0% 0 0 0;
 }
 
 .intro .slogan {
@@ -351,14 +351,14 @@ hr {
 }
 
 
+
 /* ===========================
 --- About
 ============================ */
 
 .boxed-grey {
-	background: white;
+	background: #f9f9f9;
 	padding: 20px;
-	
 }
 
 .team h5 {
@@ -515,6 +515,58 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 
 
 
+/* ===========================
+--- Footer
+============================ */
+
+footer {
+	text-align: center;
+	padding: 50px 0 ;
+	
+}
+
+footer p {
+	color: #f8f8f8;
+}
+
+/* ==========================
+Parallax
+============================= */
+
+#parallax1{	
+	background-image: url(../img/parallax/1.jpg);
+}
+
+#parallax1:after {	
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC);
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	opacity: 0.7;
+	z-index: -1;
+}
+
+
+#parallax2{	
+	background-image: url(../img/parallax/2.jpg);
+
+}
+
+#parallax2:after  {	
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC);
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	opacity: 0.7;
+	z-index: -1;
+}
+
 
 /* ===========================
 --- Elements
@@ -665,7 +717,9 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 /* Media queries */
 
 @media(min-width:767px) {
-
+	.logo  {
+		display:none;
+	}
     .navbar {
         padding: 20px 0;
         border-bottom: 0;
@@ -678,7 +732,7 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 
     .top-nav-collapse {
         padding: 0;
-        background-color: #000;
+        background-color: deepskyblue;
     }
 
     .navbar-custom.top-nav-collapse {
@@ -697,7 +751,6 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 
     .intro-text {
         font-size: 25px;
-		
     }
 
 
@@ -710,6 +763,9 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 	
 	.boxed-grey {
 		margin-bottom: 30px;
+	}
+	.logo  {
+		display:none;
 	}
 
 	
@@ -739,9 +795,7 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 		font-size: 20px;
 	}
 	
-}
-
-
+} 
 
 
 .footer-distributed{
@@ -918,6 +972,71 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 width:5em;
 }
 
+.slogan{
+width:50em;
+	margin-top:28em;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+
+.text-color {
+color:blue;
+}
+.loweri {
+text-transform:lowercase;
+font: 400 100px/1.2 'Leckerli One', Helvetica, sans-serif;
+}
+.lower {
+text-transform:lowercase;
+}
+.iwashtext {
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+				font: 400 80px/1.2 'Leckerli One', Helvetica, sans-serif;
+}
+
+.iwashtext:hover
+{
+ 	/* CSS3 Transform Effect */
+  	-webkit-transform: scale(1.2);     /* Safari & Chrome */
+  	-moz-transform: scale(1.2);        /* Firefox */
+  	-o-transform: scale(1.2);          /* Opera */
+	/* CSS3 Transition Effect */
+	-webkit-transition: all 0.12s ease-out;		/* Safari & Chrome */
+	-moz-transition: all 0.12s ease-out;		/* Firefox */
+	-o-transition: all 0.12s ease-out;		/* Opera */
+}
+
+.welcome {
+text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+.up-icon {
+
+}
 /* -------------------------------- 
 
 Modules - reusable parts of our design
@@ -1371,7 +1490,10 @@ header h1 {
 .whyus  h3 {
 	padding-top:2em;
 }
+.slogan img {
 
+    font-size: 20px;
+}
 .unbehaved-element {
     font-size: 2em;
 }
@@ -1387,50 +1509,4 @@ header h1 {
   html {
     font-size: 16px;
   }
-}
-
-/* entire container, keeps perspective */
-.flip-container {
-	perspective: 1000;
-}
-	/* flip the pane when hovered */
-	.flip-container:hover .flipper, .flip-container.hover .flipper {
-		transform: rotateY(180deg);
-	}
-
-.flip-container, .front, .back {
-	
-}
-
-/* flip speed goes here */
-.flipper {
-	transition: 0.6s;
-	transform-style: preserve-3d;
-
-	position: relative;
-}
-
-/* hide back of pane during swap */
-.front, .back {
-	backface-visibility: hidden;
-
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-/* front pane, placed above back */
-.front {
-	z-index: 2;
-	/* for firefox 31 */
-	transform: rotateY(0deg);
-}
-
-/* back, initially hidden pane */
-.back {
-	transform: rotateY(180deg);
-}
-
-.team {
-	padding-bottom:40em;
 }
